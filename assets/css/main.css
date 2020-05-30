@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+/* ----------------------------------------------------------------- */
+/* colors */
+:root {
+  --darker: hsla(205, 97%, 13%, 1);
+  --dark: hsla(190, 95%, 36%, 1);
+  --medium: hsla(160, 17%, 62%, 1);
+  --light: hsla(178, 19%, 80%, 1);
+  --lighter: hsla(60, 1%, 99%, 1);
+}
+/* ----------------------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--light);
+  font-family: "Comfortaa", cursive;
+}
+
+/* ----------------------------------------------------------------- */
+/* navigation bar */
+/* ----------------------------------------------------------------- */
+
+.navbar {
+  background: var(--darker);
+}
+.nav-link,
+.navbar-brand {
+  color: var(--lighter);
+  cursor: pointer;
+}
+.navbar-brand:hover {
+  color: var(--dark);
+}
+.nav-link {
+  margin-right: 1em !important;
+}
+.nav-link:hover {
+  color: var(--darker);
+  background-color: var(--light);
+}
+.navbar-collapse {
+  justify-content: flex-end;
+  text-align: center;
+}
+
+/* ----------------------------------------------------------------- */
+/* header */
+/* ----------------------------------------------------------------- */
+
+.header {
+  background-image: url("/assets/images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* ----------------------------------------------------------------- */
+/* overlay */
+/* ----------------------------------------------------------------- */
+
+.overlay {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* ----------------------------------------------------------------- */
+/* description */
+/* ----------------------------------------------------------------- */
+
+.description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.description h1 {
+  color: var(--dark);
+}
+.description p {
+  color: var(--lighter);
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.description button {
+  background: var(--darker);
+  color: var(--light);
+}
+.description button:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+/* ----------------------------------------------------------------- */
+/* features */
+/* ----------------------------------------------------------------- */
+
+.features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+.feature-title {
+  color: var(--darker);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+
+/* ----------------------------------------------------------------- */
+/* footer */
+/* ----------------------------------------------------------------- */
+
+.page-footer {
+  background-color: var(--darker);
+  color: var(--light);
+  padding: 2rem;
+}
+.footer-copyright {
+  color: var(--medium);
+  padding: 0.5rem;
+}
+
+/* ----------------------------------------------------------------- */
+/* overwrites */
+/* ----------------------------------------------------------------- */
+@media (max-width: 766px) {
+  .description {
+    left: 0;
+    padding: 0 15px;
+    position: absolute;
+    top: 10%;
+    transform: none;
+    text-align: center;
+  }
+
+  .description h1 {
+    font-size: 2em;
+  }
+
+  .description p {
+    font-size: 1.2rem;
+  }
+
+  .features {
+    margin: 0;
+  }
+}
+
+/* ----------------------------------------------------------------- */
+/* social */
+/* ----------------------------------------------------------------- */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  color: white;
+  text-decoration: none;
+}
+
+.fa-envelope {
+  background: grey;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-github {
+  background: #24292e;
+  color: white;
+}
+
+/* ----------------------------------------------------------------- */
+/* back to top */
+/* ----------------------------------------------------------------- */
+
+#top {
+  bottom: 0.5rem;
+  right: 0.5rem;
+  display: none;
+  position: fixed;
+}
+
+/* ----------------------------------------------------------------- */
+/* links */
+/* ----------------------------------------------------------------- */
+
+a {
+  color: var(--dark);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--medium);
+}
